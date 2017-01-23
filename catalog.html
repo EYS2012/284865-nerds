@@ -21,7 +21,7 @@
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a class="act" href="#">Магазин</a>
+            <a class="active" href="#">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -42,57 +42,44 @@
         <form action="#" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
-            <!-- Бегунок на CSS3(+JS?) - это больно сложно мне пока( -->
+            <input type="range" min="0" max="15000" step="1" value="11000">
+            <!--Тут будет от и до?-->
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <label>
-                <input type="radio" name="layout-style" value="1" checked>
-                Адаптивная
-              </label>
-            <label>
-                <input type="radio" name="layout-style" value="2">
-                Резиновая
-              </label>
-            <label>
-                <input type="radio" name="layout-style" value="3">
-                Фиксированная
-              </label>
+            <label><input type="radio" name="layout-style" value="1" checked>Адаптивная</label>
+            <label><input type="radio" name="layout-style" value="2">Резиновая</label>
+            <label><input type="radio" name="layout-style" value="3">Фиксированная</label>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <input type="checkbox" name="check1" id="check1-field" checked>
-            <label for="check1-field">Слайдер</label>
-            <input type="checkbox" name="check2" id="check2-field">
-            <label for="check1-field">Блок преимуществ</label>
-            <input type="checkbox" name="check3" id="check3-field" checked>
-            <label for="check1-field">Новости</label>
-            <input type="checkbox" name="check4" id="check4-field">
-            <label for="check1-field">Галерея</label>
-            <input type="checkbox" name="check5" id="check5-field">
-            <label for="check1-field">Корзина</label>
+            <label><input type="checkbox" name="check1" checked>Слайдер</label>
+            <label><input type="checkbox" name="check2">Блок преимуществ</label>
+            <label><input type="checkbox" name="check3" checked>Новости</label>
+            <label><input type="checkbox" name="check4">Галерея</label>
+            <label><input type="checkbox" name="check5">Корзина</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
       </aside>
       <section class="catalog">
         <div class="catalog-sort">
-          <b>Сортировать:</b>
+          <h2>Сортировать:</h2>
           <ul class="catalog-sort-labels">
-            <li class="act">По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
+            <li class="active"><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
           <ul class="catalog-sort-way">
-            <li class="sort-asc act">&nbsp;</li>
-            <li class="sort-desc">&nbsp;</li>
+            <li class="sort-asc act"><a href="#">&nbsp;</a></li>
+            <li class="sort-desc"><a href="#">&nbsp;</a></li>
           </ul>
         </div>
         <div class="catalog-items">
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="Sedona">
             <div class="item-hover">
-              <h2><a href="#">SEDONA</a></h2>
+              <h1><a href="#">SEDONA</a></h1>
               <p>Информационный сайт для туристов</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
@@ -100,7 +87,7 @@
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="PINK APP">
             <div class="item-hover">
-              <h2><a href="#">PINK APP</a></h2>
+              <h1><a href="#">PINK APP</a></h1>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
@@ -108,7 +95,7 @@
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="BORODINSKIY">
             <div class="item-hover">
-              <h2><a href="#">BORODINSKIY</a></h2>
+              <h1><a href="#">BORODINSKIY</a></h1>
               <p>Сайт салона красоты.<br>Для мужчин, да.</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
@@ -116,7 +103,7 @@
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="MISHKA">
             <div class="item-hover">
-              <h2><a href="#">MISHKA</a></h2>
+              <h1><a href="#">MISHKA</a></h1>
               <p>Интернет-магазин вязаных игрушек</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
@@ -124,7 +111,7 @@
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="A PLUS">
             <div class="item-hover">
-              <h2><a href="#">A PLUS</a></h2>
+              <h1><a href="#">A PLUS</a></h1>
               <p>Лендинг курсов повышения квалификации</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
@@ -132,14 +119,14 @@
           <article class="catalog-item">
             <img class="item-template" src="http://placehold.it/360x576" width="360" height="576" alt="КВАСТ">
             <div class="item-hover">
-              <h2><a href="#">КВАСТ</a></h2>
+              <h1><a href="#">КВАСТ</a></h1>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a class="order-btn" href="#">9900 РУБ.</a>
             </div>
           </article>
         </div>
         <div class="pages">
-          <a href="#" class="act">1</a>
+          <a href="#" class="active">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#" class="next">Следующая</a>
@@ -154,13 +141,14 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <div class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </div>
+      <ul class="footer-social">
+        <li><a class="social-btn social-btn-vk" href="#">ВКонтакте</a></li>
+        <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+      </ul>
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
     </div>
   </footer>
   <div class="write-us">
