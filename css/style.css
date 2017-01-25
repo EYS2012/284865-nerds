@@ -1,0 +1,55 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: Roboto;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+
+/*Дальше так, экспериментирую... а то у меня первые два хедера одинаковые. Лишнее? Уже начался говнокод неизящный, чувствую.*/
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.catalog-item h1 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.content h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.catalog h2 {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.write-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.main-footer h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
