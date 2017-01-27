@@ -60,7 +60,6 @@ h3 {
 
 .main-header {
   background-color: #CCFFCC;
-  margin-bottom: 20px;
 }
 
 .container {
@@ -74,34 +73,26 @@ h3 {
   background-color: #008000;
   float: left;
   width: 161px;
-  min-height: 65px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .main-navigation {
   background-color: #00CC33;
   float: left;
   width: 800px;
-  min-height: 65px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .user-block {
   background-color: #99FF66;
   float: right;
   width: 180px;
-  min-height: 65px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .promo {
   background-color: #FFFF99;
-  margin-bottom: 82px;
 }
 
 .features {
   background-color: #99CCCC;
-  margin-bottom: 80px;
 }
 
 .features-item {
@@ -109,8 +100,6 @@ h3 {
   float: left;
   width: 300px;
   margin-right: 100px;
-  min-height: 347px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .features-item:last-child {
@@ -126,42 +115,25 @@ h3 {
   background-color: #FF9999;
   float: left;
   width: 660px;
-  margin-top: 80px;
-  margin-bottom: 77px;
-  min-height: 410px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .content-right {
   background-color: #FF6666;
   float: right;
   width: 360px;
-  margin-top: 40px;
-  margin-bottom: 77px;
-  min-height: 410px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .content-bottomlogos {
   background-color: #CC6666;
-  margin-top: 46px;
-  margin-bottom: 48px;
   clear: both;
-  min-height: 90px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .contacts {
   background-color: #CCCC66;
-  margin-top: 80px;
-  min-height: 416px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .main-footer {
   background-color: #CCCCFF;
-  margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 .footer-social {
@@ -169,8 +141,6 @@ h3 {
   float: left;
   width: 260px;
   margin-right: 140px;
-  min-height: 80px;
-  /*min-height только для оформления сетки, да*/
 }
 
 
@@ -190,17 +160,12 @@ h3 {
 
 .page-header {
   background-color: #eeeeee;
-  margin-bottom: 60px;
-  min-height: 240px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .catalog-filter {
   background-color: #FFCC66;
   float: left;
   width: 260px;
-  min-height: 775px;
-  /*min-height только для оформления сетки, да*/
 }
 
 .catalog {
@@ -216,8 +181,6 @@ h3 {
   background-color: #3333FF;
   float: left;
   width: 360px;
-  min-height: 616px;
-  /*здесь потом, когда ховер скроется, height прямо прописываю, потому что изображение и немного css графики "окна браузера", я так понял*/
 }
 
 .catalog-item:nth-child(2n+1) {
