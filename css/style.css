@@ -34,11 +34,6 @@ h3 {
   line-height: 30px;
 }
 
-.content h2 {
-  font-size: 45px;
-  line-height: 45px;
-}
-
 .catalog h2 {
   font-size: 18px;
   line-height: 18px;
@@ -52,4 +47,183 @@ h3 {
 .main-footer h3 {
   font-size: 36px;
   line-height: 36px;
+}
+
+
+/*Сетки*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  background-color: #CCFFCC;
+  margin-bottom: 20px;
+}
+
+.container {
+  outline: 5px solid red;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  background-color: #008000;
+  float: left;
+  width: 161px;
+  min-height: 65px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.main-navigation {
+  background-color: #00CC33;
+  float: left;
+  width: 800px;
+  min-height: 65px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.user-block {
+  background-color: #99FF66;
+  float: right;
+  width: 180px;
+  min-height: 65px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.promo {
+  background-color: #FFFF99;
+  margin-bottom: 82px;
+}
+
+.features {
+  background-color: #99CCCC;
+  margin-bottom: 80px;
+}
+
+.features-item {
+  background-color: #339999;
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  min-height: 347px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.content {
+  background-color: #FFCCCC;
+  padding: 0 0;
+}
+
+.content-left {
+  background-color: #FF9999;
+  float: left;
+  width: 660px;
+  margin-top: 80px;
+  margin-bottom: 77px;
+  min-height: 410px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.content-right {
+  background-color: #FF6666;
+  float: right;
+  width: 360px;
+  margin-top: 40px;
+  margin-bottom: 77px;
+  min-height: 410px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.content-bottomlogos {
+  background-color: #CC6666;
+  margin-top: 46px;
+  margin-bottom: 48px;
+  clear: both;
+  min-height: 90px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.contacts {
+  background-color: #CCCC66;
+  margin-top: 80px;
+  min-height: 416px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.main-footer {
+  background-color: #CCCCFF;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.footer-social {
+  background-color: #9999FF;
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+  min-height: 80px;
+  /*min-height только для оформления сетки, да*/
+}
+
+
+/*раз мы удалили выделенный div на правый блок футера, попробовал вот так поговнокодить, но ничего не вышло
+видимо, такое уже не сетками?*/
+
+
+/*.main-footer h3,
+.main-footer p {
+  background-color: #6633FF;
+  float: right;
+  width: 760px;
+}*/
+
+
+/*отсюда специфичные для каталога*/
+
+.page-header {
+  background-color: #eeeeee;
+  margin-bottom: 60px;
+  min-height: 240px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.catalog-filter {
+  background-color: #FFCC66;
+  float: left;
+  width: 260px;
+  min-height: 775px;
+  /*min-height только для оформления сетки, да*/
+}
+
+.catalog {
+  background-color: #FFFFCC;
+  float: right;
+  width: 760px;
+}
+
+
+/*а это, подозреваю, не надо - просто попытка, тренировка*/
+
+.catalog-item {
+  background-color: #3333FF;
+  float: left;
+  width: 360px;
+  min-height: 616px;
+  /*здесь потом, когда ховер скроется, height прямо прописываю, потому что изображение и немного css графики "окна браузера", я так понял*/
+}
+
+.catalog-item:nth-child(2n+1) {
+  padding-right: 40px;
+}
+
+.catalog-items {
+  background-color: #9999FF;
 }
