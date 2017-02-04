@@ -3,7 +3,8 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: normal;
-  font-family: Roboto;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -16,12 +17,157 @@ h2 {
   line-height: 55px;
 }
 
+.main-header,
+.promo {
+  background-color: #eeeeee;
+}
 
-/*Дальше так, экспериментирую... а то у меня первые два хедера одинаковые. Лишнее? Уже начался говнокод неизящный, чувствую.*/
+.promo {
+  padding-top: 85px;
+}
 
-h3 {
+.main-header a {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  opacity: 0.6;
+}
+
+.logo a:active {
+  opacity: 0.3;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 25px;
+}
+
+.main-navigation a:hover {
+  color: #f87f81;
+}
+
+.main-navigation a:active {
+  color: #a6a6a6;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  padding-left: 175px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.basket {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 25px;
+  padding-left: 50px;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/icons/cart-icon.png") no-repeat;
+}
+
+.user-block a:hover {
+  color: #f87f81;
+}
+
+.user-block a:active {
+  color: #a6a6a6;
+}
+
+a.active {
+  /*display: inline-block;
+  vertical-align: baseline;
+  line-height: 1.95;
+  блин, это хрень, не получается розовое подчеркивание на определённом расстоянии вниз(
+   */
+  border-bottom: 2px solid #fb565a;
+}
+
+a.active:hover,
+a.active:active {
+  cursor: default;
+  color: #000000;
+}
+
+.promo-slide {
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}
+
+.slide1 {
+  background-image: url("../img/slide1.png");
+}
+
+.slide2 {
+  background-image: url("../img/slide2.png");
+}
+
+.slide3 {
+  background-image: url("../img/slide3.png");
+}
+
+.promo h2 {
+  width: 520px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.promo-info {
+  width: 420px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.features-item h2 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.features-item p {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contacts strong {
+  text-transform: uppercase;
+}
+
+.content h3 {
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.content-right h3 {
+  text-align: center;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .catalog-item h1 {
@@ -58,45 +204,37 @@ h3 {
   clear: both;
 }
 
-.main-header {
-  background-color: #CCFFCC;
-}
-
 .container {
-  outline: 5px solid red;
+  /*outline: 5px solid red;*/
   width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .logo {
-  background-color: #008000;
   float: left;
   width: 161px;
 }
 
 .main-navigation {
-  background-color: #00CC33;
   float: left;
   width: 800px;
 }
 
 .user-block {
-  background-color: #99FF66;
   float: right;
-  width: 180px;
-}
-
-.promo {
-  background-color: #FFFF99;
+  max-width: 180px;
 }
 
 .features {
-  background-color: #99CCCC;
+  /*background-color: #99CCCC;*/
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
-  background-color: #339999;
+  /*background-color: #339999;*/
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -107,14 +245,16 @@ h3 {
 }
 
 .content {
-  background-color: #FFCCCC;
+  /*background-color: #FFCCCC;*/
   padding: 0 0;
+  padding-top: 40px;
 }
 
 .content-left {
-  background-color: #FF9999;
+  /*background-color: #FF9999;*/
   float: left;
   width: 660px;
+  padding-top: 40px;
 }
 
 .content-right {
@@ -155,6 +295,117 @@ h3 {
   width: 760px;
 }*/
 
+.lead {
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.functions-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.functions-list li {
+  margin-bottom: 35px;
+}
+
+.promo-btn {
+  display: inline-block;
+  padding: 20px 55px;
+  border-radius: 5px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 80px;
+}
+
+.promo-btn:hover {
+  background-color: #e74246;
+}
+
+.promo-btn:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+.order-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+}
+
+
+/*.order-btn:hover {
+  opacity: 0.3;
+  как-то можно менять яркость для всего, не указывая прямо цвета, потом посмотреть, как
+}*/
+
+.order1 {
+  background-color: #fb565a;
+}
+
+.order1:hover {
+  background-color: #e74246;
+}
+
+.order1:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+.order2 {
+  background-color: #00ca74;
+}
+
+.order2:hover {
+  background-color: #00bc6c;
+}
+
+.order2:active {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.order3 {
+  background-color: #efc84a;
+}
+
+.order3:hover {
+  background-color: #eab534;
+}
+
+.order3:active {
+  background-color: #e5a722;
+  color: #edc265;
+  /*box-shadow: inset 0 -2;*/
+}
+
 
 /*отсюда специфичные для каталога*/
 
@@ -173,9 +424,6 @@ h3 {
   float: right;
   width: 760px;
 }
-
-
-/*а это, подозреваю, не надо - просто попытка, тренировка*/
 
 .catalog-item {
   background-color: #3333FF;
