@@ -22,9 +22,10 @@ h2 {
   background-color: #eeeeee;
 }
 
-.promo {
+
+/*.promo {
   padding-top: 85px;
-}
+}*/
 
 .main-header a {
   color: #000000;
@@ -112,7 +113,7 @@ a.active:active {
 
 .promo-slide {
   background-repeat: no-repeat;
-  background-position: right 50%;
+  background-position: 90% 100%;
 }
 
 .slide1 {
@@ -121,15 +122,17 @@ a.active:active {
 
 .slide2 {
   background-image: url("../img/slide2.png");
+  display: none;
 }
 
 .slide3 {
   background-image: url("../img/slide3.png");
+  display: none;
 }
 
 .promo h2 {
   width: 520px;
-  padding-top: 0;
+  padding-top: 65px;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -227,14 +230,12 @@ a.active:active {
 }
 
 .features {
-  /*background-color: #99CCCC;*/
   padding-top: 80px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
-  /*background-color: #339999;*/
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -245,55 +246,199 @@ a.active:active {
 }
 
 .content {
-  /*background-color: #FFCCCC;*/
   padding: 0 0;
   padding-top: 40px;
 }
 
 .content-left {
-  /*background-color: #FF9999;*/
   float: left;
   width: 660px;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .content-right {
-  background-color: #FF6666;
   float: right;
   width: 360px;
 }
 
 .content-bottomlogos {
-  background-color: #CC6666;
+  margin: 0;
+  padding: 0;
   clear: both;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  text-align: center;
+}
+
+.content-bottomlogos a {
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 2px solid #eeeeee;
+  /*блин, как этой полоске высоту дать одинаковую(*/
+}
+
+.content-bottomlogos a:last-child {
+  border: none;
+}
+
+.content-bottomlogos img {
+  padding: 0px 35px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.2;
+}
+
+.content-bottomlogos img:hover {
+  opacity: 1;
+}
+
+.content-bottomlogos img:active {
+  opacity: 0.1;
 }
 
 .contacts {
-  background-color: #CCCC66;
+  background-image: url("../img/map.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-top: 55px;
+  margin-top: 80px;
+}
+
+.contactinfo {
+  width: 270px;
+  background-color: #ffffff;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 55px;
+  margin-bottom: 54px;
+}
+
+.contacts strong {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.contacts p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.contacts-btn {
+  padding: 20px 45px;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fb565a;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.contacts-btn:hover {
+  background-color: #e74246;
+}
+
+.contacts-btn:active {
+  background-color: #d7373b;
+  color: #e37376;
+  border-top: 2px solid #c13135;
+  padding: 19px 45px;
 }
 
 .main-footer {
-  background-color: #CCCCFF;
+  padding-top: 70px;
 }
 
 .footer-social {
-  background-color: #9999FF;
   float: left;
-  width: 260px;
   margin-right: 140px;
+  /*display: block;*/
 }
 
+.social-btn {
+  display: inline-block;
+  vertical-align: middle;
+  /*ни хрена не работает как надо, не врубаюсь, почему не центруется вообще никак*/
+  width: 26px;
+  height: 26px;
+  padding: 27px 27px;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 0;
+  text-decoration: none;
+  background: #e1e1e1 url("../img/icons/sprite.png") no-repeat center;
+  border-radius: 40px;
+}
 
-/*раз мы удалили выделенный div на правый блок футера, попробовал вот так поговнокодить, но ничего не вышло
-видимо, такое уже не сетками?*/
+.footer-social a:last-child {
+  margin-right: 0;
+}
 
+.social-btn-vk {
+  background-position: 0px 0px;
+}
 
-/*.main-footer h3,
+.social-btn-fb {
+  background-position: -46px 0px;
+}
+
+.social-btn-inst {
+  background-position: -78px 0px;
+}
+
+.social-btn-vk:hover {
+  background-position: -119px 0px;
+}
+
+.social-btn-fb:hover {
+  background-position: -165px 0px;
+}
+
+.social-btn-inst:hover {
+  background-position: -197px 0px;
+}
+
+.social-btn:hover {
+  background-color: #e74246;
+}
+
+.social-btn:active {
+  background-color: #d7373b;
+  border-top: 2px solid #c13135;
+  padding: 26px 27px;
+}
+
+.main-footer h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
 .main-footer p {
-  background-color: #6633FF;
-  float: right;
-  width: 760px;
-}*/
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
 
 .lead {
   font-size: 45px;
@@ -321,7 +466,7 @@ a.active:active {
 .promo-btn {
   display: inline-block;
   padding: 20px 55px;
-  border-radius: 5px;
+  border-radius: 4px;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -342,12 +487,14 @@ a.active:active {
 .promo-btn:active {
   background-color: #d7373b;
   color: #e37376;
+  border-top: 2px solid #c13135;
+  padding: 19px 55px;
 }
 
 .order-btn {
   display: inline-block;
-  padding: 20px 40px;
-  border-radius: 5px;
+  padding: 16px 40px;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -360,12 +507,6 @@ a.active:active {
   margin: 0;
 }
 
-
-/*.order-btn:hover {
-  opacity: 0.3;
-  как-то можно менять яркость для всего, не указывая прямо цвета, потом посмотреть, как
-}*/
-
 .order1 {
   background-color: #fb565a;
 }
@@ -377,6 +518,8 @@ a.active:active {
 .order1:active {
   background-color: #d7373b;
   color: #e37376;
+  border-top: 2px solid #c13135;
+  padding: 15px 40px;
 }
 
 .order2 {
@@ -390,6 +533,8 @@ a.active:active {
 .order2:active {
   background-color: #00aa62;
   color: #4dc491;
+  border-top: 2px solid #009958;
+  padding: 15px 40px;
 }
 
 .order3 {
@@ -403,7 +548,42 @@ a.active:active {
 .order3:active {
   background-color: #e5a722;
   color: #edc265;
-  /*box-shadow: inset 0 -2;*/
+  border-top: 2px solid #ce961f;
+  padding: 15px 40px;
+}
+
+ul.about-numbers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  width: 360px;
+}
+
+.about-numbers li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+  width: 110px;
+  margin-right: 15px;
+}
+
+.about-numbers b {
+  font-size: 45px;
+  /*line-height: 45px;*/
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-numbers sup {
+  line-height: 10.06px;
+}
+
+.about-numbers li:last-child {
+  margin-right: 0;
 }
 
 
