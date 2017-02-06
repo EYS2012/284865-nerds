@@ -85,7 +85,8 @@ h2 {
   left: 13px;
   width: 15px;
   height: 15px;
-  background: transparent url("../img/icons/cart-icon.png") no-repeat;
+  background: transparent url("../img/icons/sprite.png") no-repeat;
+  background-position: -5px -5px;
 }
 
 .user-block a:hover {
@@ -266,8 +267,8 @@ a.active:active {
   margin: 0;
   padding: 0;
   clear: both;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 43px;
+  padding-bottom: 43px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   text-align: center;
@@ -276,18 +277,28 @@ a.active:active {
 .content-bottomlogos a {
   display: inline-block;
   vertical-align: middle;
-  border-right: 2px solid #eeeeee;
-  /*блин, как этой полоске высоту дать одинаковую(*/
+  position: relative;
+  /*border-right: 2px solid #eeeeee;*/
 }
 
-.content-bottomlogos a:last-child {
-  border: none;
+.content-bottomlogos a::after {
+  width: 2px;
+  height: 52px;
+  background: #eeeeee;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+}
+
+.content-bottomlogos a:last-child::after {
+  display: none;
 }
 
 .content-bottomlogos img {
-  padding: 0px 35px;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 0 50px;
   opacity: 0.2;
 }
 
@@ -358,8 +369,7 @@ a.active:active {
 .contacts-btn:active {
   background-color: #d7373b;
   color: #e37376;
-  border-top: 2px solid #c13135;
-  padding: 19px 45px;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
 }
 
 .main-footer {
@@ -373,46 +383,58 @@ a.active:active {
 }
 
 .social-btn {
-  display: inline-block;
-  vertical-align: middle;
-  /*ни хрена не работает как надо, не врубаюсь, почему не центруется вообще никак*/
-  width: 26px;
-  height: 26px;
-  padding: 27px 27px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  padding: 0;
   margin: 0;
   margin-right: 10px;
   font-size: 0;
+  display: inline-block;
+  position: relative;
   text-decoration: none;
-  background: #e1e1e1 url("../img/icons/sprite.png") no-repeat center;
-  border-radius: 40px;
+  vertical-align: top;
+  background-color: #e1e1e1;
 }
 
-.footer-social a:last-child {
-  margin-right: 0;
+.social-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icons/sprite.png");
+  background-position: no-repeat;
 }
 
-.social-btn-vk {
-  background-position: 0px 0px;
+.social-btn-vk::after {
+  width: 26px;
+  height: 15px;
+  background-position: -59px -145px;
 }
 
-.social-btn-fb {
-  background-position: -46px 0px;
+.social-btn-fb::after {
+  width: 12px;
+  height: 22px;
+  background-position: -5px -98px;
 }
 
-.social-btn-inst {
-  background-position: -78px 0px;
+.social-btn-inst::after {
+  width: 21px;
+  height: 21px;
+  background-position: -49px -98px;
 }
 
-.social-btn-vk:hover {
-  background-position: -119px 0px;
+.social-btn-vk:active::after {
+  background-position: -95px -145px;
 }
 
-.social-btn-fb:hover {
-  background-position: -165px 0px;
+.social-btn-fb:active::after {
+  background-position: -27px -98px;
 }
 
-.social-btn-inst:hover {
-  background-position: -197px 0px;
+.social-btn-inst:active::after {
+  background-position: -80px -98px;
 }
 
 .social-btn:hover {
@@ -421,8 +443,11 @@ a.active:active {
 
 .social-btn:active {
   background-color: #d7373b;
-  border-top: 2px solid #c13135;
-  padding: 26px 27px;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
+}
+
+.footer-social a:last-child {
+  margin-right: 0;
 }
 
 .main-footer h3 {
@@ -487,8 +512,7 @@ a.active:active {
 .promo-btn:active {
   background-color: #d7373b;
   color: #e37376;
-  border-top: 2px solid #c13135;
-  padding: 19px 55px;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
 }
 
 .order-btn {
@@ -518,8 +542,7 @@ a.active:active {
 .order1:active {
   background-color: #d7373b;
   color: #e37376;
-  border-top: 2px solid #c13135;
-  padding: 15px 40px;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
 }
 
 .order2 {
@@ -533,8 +556,7 @@ a.active:active {
 .order2:active {
   background-color: #00aa62;
   color: #4dc491;
-  border-top: 2px solid #009958;
-  padding: 15px 40px;
+  box-shadow: inset 0px 3px 0px 0px #009958;
 }
 
 .order3 {
@@ -548,8 +570,7 @@ a.active:active {
 .order3:active {
   background-color: #e5a722;
   color: #edc265;
-  border-top: 2px solid #ce961f;
-  padding: 15px 40px;
+  box-shadow: inset 0px 3px 0px 0px #ce961f;
 }
 
 ul.about-numbers {
@@ -580,6 +601,8 @@ ul.about-numbers {
 
 .about-numbers sup {
   line-height: 10.06px;
+  /*top: -0.25em;*/
+  font-size: 0.6em;
 }
 
 .about-numbers li:last-child {
@@ -611,7 +634,7 @@ ul.about-numbers {
   width: 360px;
 }
 
-.catalog-item:nth-child(2n+1) {
+.catalog-item:nth-chid(2n+1) {
   padding-right: 40px;
 }
 
