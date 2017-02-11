@@ -128,13 +128,18 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  <div class="write-us">
+  <div class="modal-writeus">
+    <button class="modal-writeus-close" type="button" title="Закрыть">Закрыть</button>
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="customer-field">Ваше имя:</label>
-      <input type="text" id="customer-field" name="customer" placeholder="Представьтесь, пожалуйста">
-      <label for="mail-field">Ваш e-mail:</label>
-      <input type="text" id="mail-field" name="mail" placeholder="Для отправки ответа">
+      <div>
+        <label for="customer-field">Ваше имя:</label>
+        <input type="text" id="customer-field" name="customer" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div>
+        <label for="mail-field">Ваш e-mail:</label>
+        <input type="text" id="mail-field" name="mail" placeholder="Для отправки ответа">
+      </div>
       <label for="message-field">Текст письма:</label>
       <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
       <button type="submit">Отправить</button>
