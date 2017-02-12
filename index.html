@@ -39,20 +39,34 @@
   <main>
     <section class="promo">
       <div class="container">
-        <div class="promo-slide slide1">
-          <h2 class="promo-h">Дорого, долго, скурпулезно.</h2>
-          <div class="promo-info">Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
-          <a class="promo-btn" href="#">Узнать больше</a>
-        </div>
-        <div class="promo-slide slide2">
-          <h2 class="promo-h">Любим математику как никто другой</h2>
-          <div class="promo-info">Никакого креатива, только математические формулы для расчета идеальных пропорций.</div>
-          <a class="promo-btn" href="#">Узнать больше</a>
-        </div>
-        <div class="promo-slide slide3">
-          <h2 class="promo-h">Только ночь, только хардкор</h2>
-          <div class="promo-info">Работать днем, как все? Мы против этого. Ближе к&nbsp;полуночи работа только начинается.</div>
-          <a class="promo-btn" href="#">Узнать больше</a>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="promo-slide">
+              <h2 class="promo-h">Дорого, долго, скурпулезно.</h2>
+              <div class="promo-info">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</div>
+              <a class="promo-btn" href="#">Узнать больше</a>
+            </div>
+            <div class="promo-slide">
+              <h2 class="promo-h">Любим математику как никто другой</h2>
+              <div class="promo-info">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</div>
+              <a class="promo-btn" href="#">Узнать больше</a>
+            </div>
+            <div class="promo-slide">
+              <h2 class="promo-h">Только ночь, только хардкор</h2>
+              <div class="promo-info">Работать днем, как все? Мы против этого.<br>Ближе к&nbsp;полуночи работа только начинается.</div>
+              <a class="promo-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -132,19 +146,13 @@
     <button class="modal-writeus-close" type="button" title="Закрыть">Закрыть</button>
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <div>
-        <label for="customer-field">Ваше имя:</label>
-        <input type="text" id="customer-field" name="customer" placeholder="Представьтесь, пожалуйста">
-      </div>
-      <div>
-        <label for="mail-field">Ваш e-mail:</label>
-        <input type="text" id="mail-field" name="mail" placeholder="Для отправки ответа">
-      </div>
-      <label for="message-field">Текст письма:</label>
-      <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+      <label>Ваше имя:<input type="text" name="customer" placeholder="Представьтесь, пожалуйста"></label>
+      <label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label>
+      <label>Текст письма:<textarea rows="5" name="message" placeholder="В свободной форме"></textarea></label>
       <button type="submit">Отправить</button>
     </form>
   </div>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
