@@ -23,8 +23,8 @@
           <li>
             <a href="#">Клиенты</a>
           </li>
-          <li>
-            <a class="active">Магазин</a>
+          <li class="active">
+            <a>Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -48,22 +48,39 @@
           <form action="#" method="post">
             <fieldset>
               <legend>Стоимость:</legend>
-              <input type="range" min="0" max="15000" step="1" value="11000">
-              <!--Тут будет от и до?-->
+              <!--<input type="range" min="0" max="15000" step="1" value="11000">
+            это хрен стилизуешь, оказывается(-->
+              <div class="range-controls">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
-              <label><input type="radio" name="layout-style" value="1" checked>Адаптивная</label>
-              <label><input type="radio" name="layout-style" value="2">Резиновая</label>
-              <label><input type="radio" name="layout-style" value="3">Фиксированная</label>
+              <ul class="filter-options">
+                <li><label class="filter-option"><input type="radio" name="layout-style" value="1" checked><span class="radio-indicator">Адаптивная</span></label></li>
+                <li><label class="filter-option"><input type="radio" name="layout-style" value="2"><span class="radio-indicator">Резиновая</span></label></li>
+                <li><label class="filter-option"><input type="radio" name="layout-style" value="3"><span class="radio-indicator">Фиксированная</span></label></li>
+              </ul>
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
-              <label><input type="checkbox" name="check1" checked>Слайдер</label>
-              <label><input type="checkbox" name="check2">Блок преимуществ</label>
-              <label><input type="checkbox" name="check3" checked>Новости</label>
-              <label><input type="checkbox" name="check4">Галерея</label>
-              <label><input type="checkbox" name="check5">Корзина</label>
+              <ul class="filter-checks">
+                <li><label class="filter-check"><input type="checkbox" name="check1" checked><span class="checkbox-indicator">Слайдер</span></label></li>
+                <li><label class="filter-check"><input type="checkbox" name="check2"><span class="checkbox-indicator">Блок преимуществ</span></label></li>
+                <li><label class="filter-check"><input type="checkbox" name="check3" checked><span class="checkbox-indicator">Новости</span></label></li>
+                <li><label class="filter-check"><input type="checkbox" name="check4" disabled><span class="checkbox-indicator">Галерея</span></label></li>
+                <li><label class="filter-check"><input type="checkbox" name="check5"><span class="checkbox-indicator">Корзина</span></label></li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
@@ -159,7 +176,7 @@
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </div>
       <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
   <div class="modal-writeus">

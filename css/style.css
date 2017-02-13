@@ -10,6 +10,7 @@ body {
 h1 {
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
 
 h2 {
@@ -45,6 +46,7 @@ h2 {
 .main-navigation a {
   display: block;
   padding: 25px 25px;
+  padding-bottom: 12px;
 }
 
 .main-navigation a:hover {
@@ -53,6 +55,10 @@ h2 {
 
 .main-navigation a:active {
   color: #a6a6a6;
+}
+
+.main-navigation .active a:hover {
+  color: #000000;
 }
 
 .main-navigation ul {
@@ -76,6 +82,7 @@ h2 {
   vertical-align: top;
   padding: 25px 25px;
   padding-left: 50px;
+  padding-bottom: 12px;
 }
 
 .basket::before {
@@ -97,19 +104,39 @@ h2 {
   color: #a6a6a6;
 }
 
-a.active {
-  /*display: inline-block;
-  vertical-align: baseline;
-  line-height: 1.95;
-  блин, это хрень, не получается розовое подчеркивание на определённом расстоянии вниз(
-   */
-  border-bottom: 2px solid #fb565a;
+.main-navigation .active {
+  position: relative;
+  background-color: none;
 }
 
-a.active:hover,
-a.active:active {
-  cursor: default;
+.main-navigation .active a:hover {
   color: #000000;
+  cursor: default;
+}
+
+.user-block .active:hover {
+  color: #000000;
+  cursor: default;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  left: 24px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.user-block .active::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  left: 13px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .slider {
@@ -694,16 +721,18 @@ ul.about-numbers {
   padding-bottom: 85px;
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 
 .modal-writeus-show {
   display: block;
-  animation: bounce 1s;
+  animation: prestige 1s;
 }
 
-@keyframes bounce {
+@keyframes prestige {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
 }
 
@@ -853,13 +882,216 @@ ul.about-numbers {
 .page-header {
   background-color: #eeeeee;
   min-width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
+
+
+/*Фильтр товаров*/
 
 .catalog-filter {
   /*background-color: #FFCC66;*/
   float: left;
   width: 260px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000000;
 }
+
+.catalog-filter fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 63px;
+  display: block;
+}
+
+.catalog-filter legend {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.catalog-filter fieldset legend {
+  margin-bottom: 22px;
+}
+
+.catalog-filter fieldset:nth-child(1) legend {
+  padding-bottom: 58px;
+}
+
+.catalog-filter fieldset:nth-child(1) {
+  padding-bottom: 63px;
+}
+
+.catalog-filter fieldset {
+  padding-bottom: 0;
+  margin-bottom: 52px;
+}
+
+.range-filter {
+  width: 240px;
+  /*margin: 50px auto;
+   для демонстрации (из демо) - чего демонстрации, я не понял */
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /*ерунда какая-то отображается, совсем не так, как в примере*/
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  background: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.catalog-filter fieldset li {
+  list-style-type: none;
+}
+
+.filter-option,
+.filter-check {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #283136;
+}
+
+.filter-option input[type="radio"][disabled],
+.filter-check input[type="checkbox"][disabled] {
+  opacity: 0.2;
+  cursor: default;
+  /*не работает! как весь label скрывать, у которого задизаблен его радио или чекбокс??(*/
+}
+
+.filter-check input[type="checkbox"] {
+  display: none;
+}
+
+.filter-check input[type="checkbox"]+.checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+  /*вот на этом всё и разваливается(((( $&@*#*#@(*/
+}
+
+.filter-checks label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-position: -30px -5px;
+}
+
+.catalog-filter button {
+  padding: 20px 90px;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.catalog-filter button:hover {
+  background-color: #dfdfdf;
+}
+
+.catalog-filter button:active {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+}
+
+
+/*Товары в каталоге*/
 
 .catalog {
   /*background-color: #FFFFCC;*/
@@ -873,13 +1105,14 @@ ul.about-numbers {
   width: 360px;
 }
 
-.catalog-item:nth-chid(2n+1) {
+.catalog-item:nth-child(2n+1) {
   padding-right: 40px;
 }
 
-.catalog-items {
-  /*background-color: #9999FF;*/
-}
+
+/*.catalog-items {
+  background-color: #9999FF;
+}*/
 
 .item-hover {
   display: none;

@@ -1,0 +1,173 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-icon {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -5px;
+}
+
+.sprite-checkbox-off_blocked {
+    width: 23px;
+    height: 23px;
+    background-position: -63px -5px;
+}
+
+.sprite-checkbox-off_hover {
+    width: 23px;
+    height: 23px;
+    background-position: -96px -5px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -38px;
+}
+
+.sprite-checkbox-on_blocked {
+    width: 27px;
+    height: 23px;
+    background-position: -42px -38px;
+}
+
+.sprite-checkbox-on_hover {
+    width: 27px;
+    height: 23px;
+    background-position: -79px -38px;
+}
+
+.sprite-close-cross {
+    width: 21px;
+    height: 21px;
+    background-position: -129px -5px;
+}
+
+.sprite-close-cross_click {
+    width: 21px;
+    height: 21px;
+    background-position: -129px -36px;
+}
+
+.sprite-close-cross_hover {
+    width: 21px;
+    height: 21px;
+    background-position: -116px -67px;
+}
+
+.sprite-fb-icon {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -98px;
+}
+
+.sprite-fb-icon_click {
+    width: 12px;
+    height: 22px;
+    background-position: -27px -98px;
+}
+
+.sprite-insta-icon {
+    width: 21px;
+    height: 21px;
+    background-position: -49px -98px;
+}
+
+.sprite-insta-icon_click {
+    width: 21px;
+    height: 21px;
+    background-position: -80px -98px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -111px -98px;
+}
+
+.sprite-radio-off_blocked {
+    width: 25px;
+    height: 25px;
+    background-position: -160px -5px;
+}
+
+.sprite-radio-off_hover {
+    width: 25px;
+    height: 25px;
+    background-position: -160px -40px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -147px -75px;
+}
+
+.sprite-radio-on_blocked {
+    width: 25px;
+    height: 25px;
+    background-position: -146px -110px;
+}
+
+.sprite-radio-on_hover {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -145px;
+}
+
+.sprite-sort-down {
+    width: 9px;
+    height: 9px;
+    background-position: -5px -75px;
+}
+
+.sprite-sort-down_click {
+    width: 9px;
+    height: 9px;
+    background-position: -24px -75px;
+}
+
+.sprite-sort-down_hover {
+    width: 9px;
+    height: 9px;
+    background-position: -43px -75px;
+}
+
+.sprite-sort-up {
+    width: 9px;
+    height: 9px;
+    background-position: -62px -75px;
+}
+
+.sprite-sort-up_click {
+    width: 9px;
+    height: 9px;
+    background-position: -81px -75px;
+}
+
+.sprite-sort-up_hover {
+    width: 9px;
+    height: 9px;
+    background-position: -40px -145px;
+}
+
+.sprite-vk-icon {
+    width: 26px;
+    height: 15px;
+    background-position: -59px -145px;
+}
+
+.sprite-vk-icon_click {
+    width: 26px;
+    height: 15px;
+    background-position: -95px -145px;
+}
