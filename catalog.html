@@ -51,17 +51,15 @@
               <!--<input type="range" min="0" max="15000" step="1" value="11000">
             это хрен стилизуешь, оказывается(-->
               <div class="range-controls">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
               </div>
             </fieldset>
             <fieldset>
@@ -94,45 +92,55 @@
               <li><a href="#">По названию</a></li>
             </ul>
             <ul class="catalog-sort-way">
-              <li class="sort-asc act"><a href="#">&nbsp;</a></li>
-              <li class="sort-desc"><a href="#">&nbsp;</a></li>
+              <li class="sort-desc act"><a href="#">&nbsp;</a></li>
+              <li class="sort-asc"><a href="#">&nbsp;</a></li>
             </ul>
           </div>
           <div class="catalog-items clearfix">
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-1.png" width="360" height="576" alt="Sedona">
+              <div class="item-template">
+                <img src="img/catalog-1.png" width="360" height="576" alt="Sedona">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">SEDONA</a></h1>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br>для туристов</p>
                 <a class="order-btn" href="#">9900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-2.png" width="360" height="576" alt="PINK APP">
+              <div class="item-template">
+                <img src="img/catalog-2.png" width="360" height="576" alt="PINK APP">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">PINK APP</a></h1>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a class="order-btn" href="#">9900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-3.png" width="360" height="576" alt="BORODINSKIY">
+              <div class="item-template">
+                <img src="img/catalog-3.png" width="360" height="576" alt="BORODINSKIY">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">BORODINSKIY</a></h1>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a class="order-btn" href="#">9900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-4.png" width="360" height="576" alt="MISHKA">
+              <div class="item-template">
+                <img src="img/catalog-4.png" width="360" height="576" alt="MISHKA">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">MISHKA</a></h1>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <p>Интернет-магазин<br>вязаных игрушек</p>
                 <a class="order-btn" href="#">9900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-5.png" width="360" height="576" alt="A PLUS">
+              <div class="item-template">
+                <img src="img/catalog-5.png" width="360" height="576" alt="A PLUS">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">A PLUS</a></h1>
                 <p>Лендинг курсов повышения квалификации</p>
@@ -140,7 +148,9 @@
               </div>
             </article>
             <article class="catalog-item">
-              <img class="item-template" src="img/catalog-6.png" width="360" height="576" alt="КВАСТ">
+              <div class="item-template">
+                <img src="img/catalog-6.png" width="360" height="576" alt="КВАСТ">
+              </div>
               <div class="item-hover">
                 <h1><a href="#">КВАСТ</a></h1>
                 <p>Промо-сайт производителя крафтового кваса</p>
