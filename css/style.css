@@ -406,6 +406,7 @@ h2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-top: 55px;
+  margin-top: 45px;
 }
 
 .contactinfo {
@@ -413,28 +414,31 @@ h2 {
   background-color: #ffffff;
   margin: 0;
   padding-left: 50px;
-  padding-top: 55px;
-  margin-bottom: 54px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contacts strong {
   display: block;
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts p {
   display: block;
   margin: 0;
   padding: 0;
-  width: 220px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .contacts-btn {
-  padding: 21px 45px;
+  padding: 16px 45px;
   display: inline-block;
   border-radius: 4px;
   vertical-align: top;
@@ -852,6 +856,13 @@ ul.about-numbers {
 .modal-writeus textarea:focus {
   color: #444444;
   border-color: #000000;
+}
+
+.modal-writeus .uncorrect,
+.modal-writeus .uncorrect:hover,
+.modal-writeus .uncorrect:focus {
+  border-color: #e74246;
+  color: #e74246;
 }
 
 .modal-writeus button[type="submit"] {
