@@ -338,7 +338,7 @@ h2 {
 .content {
   padding: 0 0;
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 14px;
 }
 
 .content-left {
@@ -368,7 +368,6 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  /*border-right: 2px solid #eeeeee;*/
 }
 
 .content-bottomlogos a::after {
@@ -401,21 +400,27 @@ h2 {
 }
 
 .contacts {
+  position: relative;
+  z-index: 1;
   min-width: 1200px;
   background-image: url("../img/map.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  padding-top: 55px;
   margin-top: 45px;
+  min-height: 416px;
 }
 
 .contactinfo {
+  position: absolute;
+  margin: 0;
+  top: 55px;
+  left: auto;
+  z-index: 2;
   width: 270px;
   background-color: #ffffff;
   margin: 0;
   padding-left: 50px;
   padding-top: 50px;
-  margin-bottom: 50px;
 }
 
 .contacts strong {
@@ -856,6 +861,7 @@ ul.about-numbers {
 .modal-writeus textarea:focus {
   color: #444444;
   border-color: #000000;
+  outline: 0;
 }
 
 .modal-writeus .uncorrect,
@@ -902,6 +908,10 @@ ul.about-numbers {
   min-width: 1200px;
   padding-top: 30px;
   padding-bottom: 70px;
+}
+
+.catalog {
+  padding-bottom: 0;
 }
 
 aside {
