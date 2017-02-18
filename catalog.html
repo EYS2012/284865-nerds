@@ -65,19 +65,19 @@
             <fieldset>
               <legend>Сетка:</legend>
               <ul class="filter-options">
-                <li><label class="filter-option"><input type="radio" name="layout-style" value="1" checked><span class="radio-indicator">Адаптивная</span></label></li>
-                <li><label class="filter-option"><input type="radio" name="layout-style" value="2"><span class="radio-indicator">Резиновая</span></label></li>
-                <li><label class="filter-option"><input type="radio" name="layout-style" value="3"><span class="radio-indicator">Фиксированная</span></label></li>
+                <li><input type="radio" name="layout-style" id="layout1" value="1" checked><label class="filter-option" for="layout1">Адаптивная</label></li>
+                <li><input type="radio" name="layout-style" id="layout2" value="2"><label class="filter-option" for="layout2">Фиксированная</label></li>
+                <li><input type="radio" name="layout-style" id="layout3" value="3"><label class="filter-option" for="layout3">Резиновая</label></li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
               <ul class="filter-checks">
-                <li><label class="filter-check"><input type="checkbox" name="check1" checked><span class="checkbox-indicator">Слайдер</span></label></li>
-                <li><label class="filter-check"><input type="checkbox" name="check2"><span class="checkbox-indicator">Блок преимуществ</span></label></li>
-                <li><label class="filter-check"><input type="checkbox" name="check3" checked><span class="checkbox-indicator">Новости</span></label></li>
-                <li><label class="filter-check"><input type="checkbox" name="check4" disabled><span class="checkbox-indicator">Галерея</span></label></li>
-                <li><label class="filter-check"><input type="checkbox" name="check5"><span class="checkbox-indicator">Корзина</span></label></li>
+                <li><input type="checkbox" name="check1" checked><label class="filter-check" for="check1">Слайдер</label></li>
+                <li><input type="checkbox" name="check2"><label class="filter-check" for="check2">Блок преимуществ</label></li>
+                <li><input type="checkbox" name="check3" checked><label class="filter-check" for="check3">Новости</label></li>
+                <li><input type="checkbox" name="check4"><label class="filter-check" for="check4">Галерея</label></li>
+                <li><input type="checkbox" name="check5"><label class="filter-check" for="check5">Корзина</label></li>
               </ul>
             </fieldset>
             <button type="submit">Показать</button>
@@ -159,10 +159,10 @@
             </article>
           </div>
           <div class="pages">
-            <a href="#" class="active">1</a>
+            <a class="active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
-            <a href="#" class="next">Следующая</a>
+            <a href="#">Следующая</a>
           </div>
         </section>
       </section>

@@ -25,7 +25,7 @@ h2 {
 }
 
 .main-header {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .main-header a {
@@ -123,7 +123,7 @@ h2 {
   content: "";
   position: absolute;
   right: 24px;
-  bottom: 0;
+  bottom: 7px;
   left: 24px;
   height: 2px;
   background-color: #fb565a;
@@ -338,6 +338,7 @@ h2 {
 .content {
   padding: 0 0;
   padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .content-left {
@@ -405,7 +406,6 @@ h2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-top: 55px;
-  margin-top: 80px;
 }
 
 .contactinfo {
@@ -893,6 +893,13 @@ ul.about-numbers {
   padding-bottom: 70px;
 }
 
+aside {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 9px;
+}
+
 
 /*Фильтр товаров*/
 
@@ -908,8 +915,8 @@ ul.about-numbers {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 63px;
   display: block;
+  margin-bottom: 22px;
 }
 
 .catalog-filter legend {
@@ -918,23 +925,7 @@ ul.about-numbers {
   line-height: 30px;
   font-weight: bold;
   margin: 0;
-}
-
-.catalog-filter fieldset legend {
-  margin-bottom: 22px;
-}
-
-.catalog-filter fieldset:nth-child(1) legend {
-  padding-bottom: 58px;
-}
-
-.catalog-filter fieldset:nth-child(1) {
-  padding-bottom: 63px;
-}
-
-.catalog-filter fieldset {
-  padding-bottom: 0;
-  margin-bottom: 52px;
+  padding: 0;
 }
 
 .range-filter {
@@ -947,6 +938,7 @@ ul.about-numbers {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 48px;
   margin-bottom: 15px;
   border-radius: 5px;
   background: #f1f1f1;
@@ -977,11 +969,11 @@ ul.about-numbers {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 10px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 150px;
 }
 
 .price-controls label {
@@ -991,12 +983,14 @@ ul.about-numbers {
 
 .price-controls {
   font-size: 0;
+  margin-bottom: 34px;
 }
 
 .price-controls label {
   font-size: 16px;
   display: inline-block;
   width: 50%;
+  text-transform: uppercase;
 }
 
 .max-price {
@@ -1018,48 +1012,120 @@ ul.about-numbers {
 
 .catalog-filter fieldset li {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
 }
 
-.filter-option,
-.filter-check {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  color: #283136;
+.filter-options {
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+  padding-bottom: 4px;
 }
 
-.filter-option input[type="radio"][disabled],
-.filter-check input[type="checkbox"][disabled] {
-  opacity: 0.2;
-  cursor: default;
-  /*не работает! как весь label скрывать, у которого задизаблен его радио или чекбокс??(*/
-}
-
-.filter-check input[type="checkbox"] {
+.filter-options input[type="radio"] {
   display: none;
 }
 
-.filter-check input[type="checkbox"]+.checkbox-indicator {
+.filter-options label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 37px;
+}
+
+.filter-options label::before {
+  content: "";
   position: absolute;
-  top: -3px;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  border: 2px solid #000000;
-  /*вот на этом всё и разваливается(((( $&@*#*#@(*/
+  top: 0;
+  left: -37px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../img/icons/sprite.png") no-repeat;
+  background-position: -160px -40px;
+  display: block;
+  opacity: 0.5;
+}
+
+.filter-options label:hover::before {
+  opacity: 1;
+}
+
+.filter-options input[type="radio"]:checked~label::before {
+  background-position: -5px -145px;
+  opacity: 0.5;
+}
+
+.filter-options input[type="radio"]:checked~label:hover::before {
+  opacity: 1;
+}
+
+.filter-options input[type="radio"]:disabled~label {
+  opacity: 0.3;
+}
+
+.filter-options input[type="radio"]:disabled~label:hover::before {
+  opacity: 0.5;
+}
+
+.filter-checks {
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+}
+
+.filter-checks li {
+  margin-top: 18px;
+}
+
+.filter-checks input[type="checkbox"] {
+  display: none;
+}
+
+.filter-checks label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 37px;
 }
 
 .filter-checks label::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: -37px;
   width: 23px;
   height: 23px;
-  background-position: -30px -5px;
+  background: transparent url("../img/icons/sprite.png") no-repeat;
+  background-position: -96px -5px;
+  display: block;
+  opacity: 0.5;
+}
+
+.filter-checks label:hover::before {
+  opacity: 1;
+}
+
+.filter-checks input[type="checkbox"]:checked~label::before {
+  width: 27px;
+  height: 23px;
+  background-position: -79px -38px;
+  opacity: 0.5;
+}
+
+.filter-checks input[type="checkbox"]:checked~label:hover::before {
+  opacity: 1;
+}
+
+.filter-checks input[type="checkbox"]:disabled~label {
+  opacity: 0.3;
+}
+
+.filter-checks input[type="checkbox"]:disabled~label:hover::before {
+  opacity: 0.5;
 }
 
 .catalog-filter button {
-  padding: 20px 90px;
+  padding: 16px 89px;
   display: inline-block;
   border-radius: 4px;
   vertical-align: top;
@@ -1073,7 +1139,8 @@ ul.about-numbers {
   line-height: 18px;
   border: none;
   cursor: pointer;
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .catalog-filter button:hover {
@@ -1137,6 +1204,7 @@ ul.about-numbers {
 
 .catalog-sort-way li {
   display: inline-block;
+  text-align: right;
 }
 
 .catalog-sort-way li a {
@@ -1362,4 +1430,50 @@ ul.about-numbers {
 .item-hover .order-btn:active {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0px 0px #c13135;
+}
+
+.pages {
+  padding-top: 23px;
+}
+
+.pages a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 18px;
+  cursor: pointer;
+  background: #eeeeee;
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 6px;
+  color: black;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.pages a:last-child {
+  padding: 14px 75px;
+}
+
+.pages .active {
+  background: #ffffff;
+  color: #000000;
+  border-color: #dbdbdb;
+}
+
+.pages a:hover {
+  background-color: #dfdfdf;
+  border: 3px solid #dfdfdf;
+}
+
+.pages a:active {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  border: 3px solid #d5d5d5;
+  border-top: 3px solid #bfbfbf;
+  /*box-shadow: inset 0px 3px 0px 0px #bfbfbf;*/
 }
