@@ -50,7 +50,7 @@ img {
 .main-navigation li {
   display: block;
   padding: 25px 24px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ img {
   vertical-align: top;
   padding: 25px 20px;
   padding-left: 50px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .basket::before {
@@ -137,7 +137,7 @@ img {
   content: "";
   position: absolute;
   right: 24px;
-  bottom: 7px;
+  bottom: 4px;
   left: 24px;
   height: 2px;
   background-color: #fb565a;
@@ -241,7 +241,7 @@ img {
   font-weight: bold;
   color: black;
   margin: 0;
-  margin-top: 69px;
+  margin-top: 68px;
 }
 
 .promo-info {
@@ -318,8 +318,10 @@ img {
 
 .features {
   padding-top: 79px;
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 82px;
+  /*border-bottom: 2px solid #eeeeee;*/
+  /*position: relative;*/
+  /*vertical-align: bottom;*/
 }
 
 .features-item {
@@ -415,7 +417,18 @@ img {
   float: left;
   width: 660px;
   padding-top: 34px;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
+  position: relative;
+}
+
+.content-left::before {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  top: -42px;
+  background: #eeeeee;
+  position: absolute;
+  display: block;
 }
 
 .content-right {
@@ -427,19 +440,27 @@ img {
   margin: 0;
   padding: 0;
   clear: both;
-  padding-top: 48px;
-  padding-bottom: 35px;
-  border-top: 2px solid #eeeeee;
-  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 45px;
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
+}
+
+.content-bottomlogos::before {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  top: 0;
+  background: #eeeeee;
+  position: absolute;
+  display: block;
 }
 
 .content-bottomlogos::after {
   content: "";
-  width: 100%;
+  width: 1160px;
   height: 2px;
-  bottom: -3px;
+  bottom: -2px;
   background: #eeeeee;
   position: absolute;
   display: block;
@@ -449,6 +470,49 @@ img {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  width: 280px;
+  padding: 0;
+  margin: 0;
+  margin-right: 19px;
+}
+
+.content-bottomlogos img {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  opacity: 0.2;
+}
+
+.bottomlogo:nth-child(1) img {
+  top: 6px;
+  left: 31px;
+}
+
+.bottomlogo:nth-child(2) img {
+  top: 1px;
+  left: 24px;
+}
+
+.content-bottomlogos a:nth-child(3) {
+  margin-right: 0;
+  width: 275px;
+}
+
+.bottomlogo:nth-child(3) img {
+  top: 1px;
+  left: 33px;
+}
+
+.bottomlogo:nth-child(4) img {
+  top: 4px;
+  left: 60px;
+}
+
+.content-bottomlogos a:last-child {
+  margin-right: 0;
+  width: 270px;
 }
 
 .content-bottomlogos a::after {
@@ -456,7 +520,7 @@ img {
   height: 52px;
   background: #eeeeee;
   position: absolute;
-  right: 25px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   content: "";
@@ -469,17 +533,8 @@ img {
 
 .content-bottomlogos img {
   padding: 0;
-  padding-left: 19px;
-  padding-right: 75px;
+  margin: 0;
   opacity: 0.2;
-}
-
-.content-bottomlogos a:first-child img {
-  padding-left: 5px;
-}
-
-.content-bottomlogos a:last-child img {
-  padding-right: 25px;
 }
 
 .content-bottomlogos img:hover {
@@ -489,6 +544,9 @@ img {
 .content-bottomlogos img:active {
   opacity: 0.1;
 }
+
+
+/*Карта и контактная информация*/
 
 .contacts {
   position: relative;
@@ -694,7 +752,7 @@ img {
 .promo-btn {
   display: inline-block;
   vertical-align: top;
-  padding: 16px 54px;
+  padding: 16px 55px;
   border-radius: 4px;
   vertical-align: top;
   text-align: center;
@@ -706,7 +764,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .promo-btn:hover {
