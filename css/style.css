@@ -7,19 +7,19 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
+.page-header h1 {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 39px;
   margin-bottom: 37px;
   padding-right: 21px;
 }
 
-h2 {
-  font-size: 55px;
-  line-height: 55px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-header,
@@ -47,15 +47,20 @@ h2 {
   opacity: 0.3;
 }
 
-.main-navigation a {
+.main-navigation li {
   display: block;
   padding: 25px 24px;
   padding-bottom: 12px;
   text-align: center;
 }
 
-.main-navigation li:last-child a {
-  padding-left: 19px;
+.main-navigation li:first-child {
+  padding-left: 26px;
+  padding-right: 22px;
+}
+
+.main-navigation li:last-child {
+  padding-left: 20px;
 }
 
 .main-navigation a:hover {
@@ -173,12 +178,12 @@ h2 {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 12px;
   height: 12px;
   margin: 0 7px;
   background: white;
   border: 3px solid white;
-  vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -264,14 +269,9 @@ h2 {
 .content-right h3 {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 50px;
   padding-left: 16px;
-}
-
-.features h2 {
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .catalog h2 {
@@ -317,7 +317,7 @@ h2 {
 }
 
 .features {
-  padding-top: 80px;
+  padding-top: 79px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -325,6 +325,7 @@ h2 {
 .features-item {
   float: left;
   width: 300px;
+  padding: 0;
   margin-right: 100px;
 }
 
@@ -333,10 +334,12 @@ h2 {
 }
 
 .features-item h2 {
+  font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 .features-item p {
@@ -347,13 +350,13 @@ h2 {
 
 .order-btn {
   display: inline-block;
+  vertical-align: top;
   padding: 16px 40px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   line-height: 18px;
-  vertical-align: top;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -494,27 +497,27 @@ h2 {
   background-image: url("../img/map.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin-top: 60px;
+  margin-top: 58px;
   min-height: 416px;
 }
 
 .contactinfo {
   position: absolute;
   margin: 0;
-  top: 55px;
+  top: 54px;
   left: auto;
   z-index: 2;
   width: 270px;
   background-color: #ffffff;
   margin: 0;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 49px;
 }
 
 .contacts strong {
   display: block;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -526,15 +529,15 @@ h2 {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-weight: 400;
 }
 
 .contacts-btn {
   padding: 16px 45px;
   display: inline-block;
-  border-radius: 4px;
   vertical-align: top;
+  border-radius: 4px;
   text-align: center;
   color: #ffffff;
   background-color: #fb565a;
@@ -545,8 +548,8 @@ h2 {
   line-height: 18px;
   border: none;
   cursor: pointer;
-  margin-top: 15px;
-  margin-bottom: 50px;
+  margin-top: 18px;
+  margin-bottom: 48px;
 }
 
 .contacts-btn:hover {
@@ -578,9 +581,9 @@ h2 {
   margin-right: 8px;
   font-size: 0;
   display: inline-block;
+  vertical-align: top;
   position: relative;
   text-decoration: none;
-  vertical-align: top;
   background-color: #e1e1e1;
 }
 
@@ -690,6 +693,7 @@ h2 {
 
 .promo-btn {
   display: inline-block;
+  vertical-align: top;
   padding: 16px 54px;
   border-radius: 4px;
   vertical-align: top;
@@ -737,7 +741,7 @@ ul.about-numbers {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .about-numbers sup {
@@ -901,8 +905,8 @@ ul.about-numbers {
 .modal-writeus button[type="submit"] {
   padding: 20px 82px;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 4px;
-  vertical-align: top;
   text-align: center;
   color: #ffffff;
   background-color: #fb565a;
@@ -1020,11 +1024,6 @@ ul.about-numbers {
   left: 160px;
 }
 
-.price-controls label {
-  display: inline-block;
-  width: 50%;
-}
-
 .price-controls {
   font-size: 0;
   margin-bottom: 34px;
@@ -1033,6 +1032,7 @@ ul.about-numbers {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   text-transform: uppercase;
 }
@@ -1167,6 +1167,7 @@ ul.about-numbers {
 .catalog-filter button {
   padding: 16px 89px;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 4px;
   vertical-align: top;
   text-align: center;
@@ -1197,6 +1198,8 @@ ul.about-numbers {
 /*Сортировщик каталога*/
 
 .catalog-sort h2 {
+  display: inline-block;
+  vertical-align: bottom;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -1204,21 +1207,24 @@ ul.about-numbers {
   margin: 0;
   padding: 0;
   margin-right: 262px;
-  display: inline-block;
+  padding-bottom: 21px;
 }
 
 .catalog-sort-labels {
   display: inline-block;
+  vertical-align: top;
   padding: 0;
 }
 
 .catalog-sort-labels li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 22px;
 }
 
 .catalog-sort-labels li a {
   display: inline-block;
+  vertical-align: middle;
   color: #cacaca;
   text-transform: uppercase;
   text-decoration: none;
@@ -1239,16 +1245,19 @@ ul.about-numbers {
 
 .catalog-sort-way {
   display: inline-block;
+  vertical-align: top;
   padding: 0;
 }
 
 .catalog-sort-way li {
   display: inline-block;
+  vertical-align: top;
   text-align: right;
 }
 
 .catalog-sort-way li a {
   display: inline-block;
+  vertical-align: top;
   text-decoration: none;
   width: 9px;
 }
@@ -1452,6 +1461,7 @@ ul.about-numbers {
 .item-hover .order-btn {
   padding: 16px 61px;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 4px;
   vertical-align: top;
   text-align: center;
@@ -1486,6 +1496,7 @@ ul.about-numbers {
 
 .pages a {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
