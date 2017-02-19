@@ -927,6 +927,11 @@ ul.about-numbers {
   box-shadow: inset 0px 3px 0px 0px #c13135;
 }
 
+.modal-error {
+  -webkit-animation: shake 0.4s;
+  animation: shake 0.4s;
+}
+
 
 /*Каталог*/
 
