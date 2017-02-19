@@ -120,7 +120,6 @@ img {
 
 .main-navigation .active {
   position: relative;
-  background-color: none;
 }
 
 .main-navigation .active a:hover {
@@ -206,6 +205,10 @@ img {
   border-radius: 10px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -222,6 +225,10 @@ img {
   border-radius: 10px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 20;
 }
@@ -349,11 +356,8 @@ img {
 }
 
 .features {
-  padding-top: 79px;
+  padding-top: 80px;
   padding-bottom: 82px;
-  /*border-bottom: 2px solid #eeeeee;*/
-  /*position: relative;*/
-  /*vertical-align: bottom;*/
 }
 
 .features-item {
@@ -373,7 +377,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .features-item p {
@@ -554,6 +558,10 @@ img {
   position: absolute;
   right: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
   content: "";
   display: block;
@@ -634,7 +642,7 @@ img {
   background-color: #fb565a;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: medium;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   border: none;
@@ -683,9 +691,13 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
   transform: translate(-50%, -50%);
   background-image: url("../img/icons/sprite.png");
-  background-position: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .social-btn-vk::after {
@@ -864,11 +876,36 @@ ul.about-numbers {
 
 .modal-writeus-show {
   display: block;
+  -webkit-animation: prestige 1s;
+  -moz-animation: prestige 1s;
+  -o-animation: prestige 1s;
   animation: prestige 1s;
+}
+
+@-webkit-keyframes prestige {
+  0% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes prestige {
+  0% {
+    -moz-transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes prestige {
+  0% {
+    -o-transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 @keyframes prestige {
   0% {
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
     opacity: 0;
   }
@@ -899,10 +936,18 @@ ul.about-numbers {
 }
 
 .modal-writeus-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal-writeus-close::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   transform: rotate(-45deg);
 }
 
@@ -1003,7 +1048,7 @@ ul.about-numbers {
   background-color: #fb565a;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: medium;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   border: none;
@@ -1256,7 +1301,7 @@ ul.about-numbers {
 }
 
 .catalog-filter button {
-  padding: 16px 89px;
+  padding: 16px 87px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 4px;
@@ -1266,7 +1311,7 @@ ul.about-numbers {
   background-color: #eeeeee;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: medium;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   border: none;
@@ -1581,8 +1626,7 @@ ul.about-numbers {
 }
 
 .pages {
-  padding-top: 20px;
-  padding-bottom: -14px;
+  padding-top: 22px;
 }
 
 .pages a {
