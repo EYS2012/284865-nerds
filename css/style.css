@@ -885,27 +885,14 @@ ul.about-numbers {
 @-webkit-keyframes prestige {
   0% {
     -webkit-transform: translateX(-100%);
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes prestige {
-  0% {
-    -moz-transform: translateX(-100%);
-    opacity: 0;
-  }
-}
-
-@-o-keyframes prestige {
-  0% {
-    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
 }
 
 @keyframes prestige {
   0% {
-    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     opacity: 0;
   }
